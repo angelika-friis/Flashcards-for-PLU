@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: row;
+    min-width: 320px;
+    width: auto;
+    gap: 2rem;
+    height: 90dvh;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0;
+}
+
+.cardWrapper {
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
