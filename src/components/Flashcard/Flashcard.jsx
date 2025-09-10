@@ -17,50 +17,60 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard }) => {
         setExplanation(data[language])
     }, [language])
 
+    useEffect(() => {
+        setShowDescription(false);
+    }, [index]);
+
     return (
-        <>
-            <Stack direction={"row"} className={styles.header}>
+        <Container className={styles.container}>
+            <Stack direction={"row"} className={styles.topBar}>
                 <IconButton size="large"><Icon icon="tabler:chevron-left" /></IconButton>
                 <Typography variant="body1" color="text.disabled">{index + 1} / {numOfCards}</Typography>
             </Stack>
-            <Container className={styles.container}>
-                {index !== 0 &&
-                    <IconButton onClick={() => nextCard()}>
-                        <Icon icon="tabler:chevron-left" />
-                    </IconButton>
-                }
-                <Stack gap={3} className={styles.cardWrapper}>
-                    <Stack direction={"row"} gap={2}>
-                        {["en", "sv", "enkel"].map((l) => (
-                            <Button
-                                key={l}
-                                variant="contained"
-                                size="small"
-                                sx={{ borderRadius: "20px", textTransform: "none" }}
-                                onClick={() => setLanguage(l)}
-                            >
-                                {l}
-                            </Button>
-                        ))}
-                    </Stack>
-                    <Card
-                        onClick={() => !showDescription ? setShowDescription(true) : setShowDescription(false)}
-                        className={styles.card}
-                    >
-                        <Typography variant="h6">
-                            {term}
-                        </Typography>
-                    </Card>
-                    {showDescription &&
-                        <Card className={styles.card}>
-                            <Typography variant="body1">{explanation}</Typography>
-                        </Card>}
+            <Stack gap={3} className={styles.cardContainer}>
+                <Stack direction={"row"} gap={2}>
+                    {["en", "sv", "enkel"].map((l) => (
+                        <Button
+                            key={l}
+                            variant="contained"
+                            size="small"
+                            sx={{ borderRadius: "20px", textTransform: "none" }}
+                            onClick={() => setLanguage(l)}
+                        >
+                            {l}
+                        </Button>
+                    ))}
                 </Stack>
-                <IconButton onClick={() => prevCard}>
-                    <Icon icon="tabler:chevron-right" />
-                </IconButton>
-            </Container>
-        </>
+                <Card
+                    onClick={() => !showDescription ? setShowDescription(true) : setShowDescription(false)}
+                    className={styles.cardTerm}
+                >
+                    {index !== 0 ? (
+                        <IconButton onClick={prevCard}>
+                            <Icon icon="tabler:chevron-left" />
+                        </IconButton>
+                    ) : (
+                        <div />
+                    )}
+                    <Typography variant="h6">
+                        {term}
+                    </Typography>
+                    {index < numOfCards - 1 ? (
+                        <IconButton onClick={nextCard}>
+                            <Icon icon="tabler:chevron-right" />
+                        </IconButton>
+                    ) : (
+                        <div />
+                    )}
+                </Card>
+                {showDescription
+                    ? <Card className={styles.cardDescription}>
+                        <Typography variant="body1">{explanation}</Typography>
+                    </Card>
+                    : <Typography variant="caption" color="text.disabled" sx={{ textAlign: 'center' }}>Klicka på kortet för att visa/stänga beskrivningen</Typography>
+                }
+            </Stack>
+        </Container>
     );
 };
 
