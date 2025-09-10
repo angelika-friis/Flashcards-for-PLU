@@ -1,25 +1,22 @@
-import data from '../../data/data.json';
-import { Paper } from '@mui/material';
+import { Paper, Typography } from '@mui/material';
+import styles from './Categories.module.css';
+import { Icon } from '@iconify/react';
 
-const Categories = ({ flashcards = [] }) => {
-    console.info(flashcards)
-
-    if (flashcards.length === 0) {
-        flashcards = data.default;
-    };
+const Categories = ({ category = [], onClick }) => {
 
     return (
-        <ul>
-            {flashcards.map((category, i) =>
-                <li key={category.kategori}>
-                    <Paper
-                        onClick={() => console.log("click")}
-                    >
-                        {category.kategori}
-                    </Paper>
-                </li>
-            )}
-        </ul>
+        <Paper
+            onClick={() => onClick(category.categoryName)}
+            className={styles.categoryCard}
+        >
+            <Icon icon="lets-icons:check-fill" color='lightgray' />
+            <Typography variant='body1'>
+                {category.categoryName}
+            </Typography>
+            <Typography variant='body1' className={styles.numOfCards}>
+                ({category.terms.length})
+            </Typography>
+        </Paper>
     )
 }
 

@@ -2,12 +2,13 @@ import { Button, Typography, Card, Stack, IconButton, Container } from "@mui/mat
 import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import styles from './Flashcard.module.css';
+import { useNavigate } from "react-router";
 
-const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard }) => {
-    const [language, setLanguage] = useState("enkel");
+const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, language, setLanguage }) => {
     const [term, setTerm] = useState("");
     const [explanation, setExplanation] = useState("");
     const [showDescription, setShowDescription] = useState(false);
+    let navigate = useNavigate();
 
     useEffect(() => {
         setTerm(data.term);
@@ -24,20 +25,25 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard }) => {
     return (
         <Container className={styles.container}>
             <Stack direction={"row"} className={styles.topBar}>
-                <IconButton size="large"><Icon icon="tabler:chevron-left" /></IconButton>
+                <IconButton
+                    onClick={() => navigate('/')}
+                    size="large"
+                >
+                    <Icon icon="tabler:chevron-left" />
+                </IconButton>
                 <Typography variant="body1" color="text.disabled">{index + 1} / {numOfCards}</Typography>
             </Stack>
             <Stack gap={3} className={styles.cardContainer}>
                 <Stack direction={"row"} gap={2}>
-                    {["en", "sv", "enkel"].map((l) => (
+                    {[{ buttonName: 'en', value: 'en' }, { buttonName: 'sv', value: 'se' }, { buttonName: 'enkel', value: 'seSimple' }].map((lang) => (
                         <Button
-                            key={l}
+                            key={lang.value}
                             variant="contained"
                             size="small"
                             sx={{ borderRadius: "20px", textTransform: "none" }}
-                            onClick={() => setLanguage(l)}
+                            onClick={() => setLanguage(lang.value)}
                         >
-                            {l}
+                            {lang.buttonName}
                         </Button>
                     ))}
                 </Stack>

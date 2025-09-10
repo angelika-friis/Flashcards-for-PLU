@@ -9,13 +9,13 @@ const FlashcardPage = () => {
 
     const category = params.category || "Versionshantering";
     const cardIndex = Number(params.cardId || 0);
-    const [showDescription, setShowDescription] = useState(false);
 
     const [cards, setCards] = useState([]);
     const [card, setCard] = useState([]);
+    const [language, setLanguage] = useState("seSimple");
 
     useEffect(() => {
-        category && setCards(data.find(obj => obj.kategori === category).termer)
+        category && setCards(data.find(obj => obj.categoryName === category).terms)
     }, [category])
 
     useEffect(() => {
@@ -35,16 +35,21 @@ const FlashcardPage = () => {
         navigate(`/flashcard/${category}/${cardIndex - 1}`)
     }
 
+    const hasValidCard =
+        cards.length > 0 && cardIndex >= 0 && cardIndex < cards.length;
+
     return (
         <div>
-            {card &&
+            {hasValidCard &&
                 <Flashcard
                     key={cardIndex}
-                    data={card}
+                    data={cards[cardIndex]}
                     index={cardIndex}
                     numOfCards={cards.length}
                     nextCard={nextCard}
                     prevCard={prevCard}
+                    language={language}
+                    setLanguage={setLanguage}
                 />
             }
         </div>
