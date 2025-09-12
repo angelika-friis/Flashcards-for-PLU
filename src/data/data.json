@@ -142,362 +142,362 @@
     ]
   },
   {
-    "category-name": "Miljöer & Infrastruktur",
+    "categoryName": "Miljöer & Infrastruktur",
     "terms": [
       {
         "term": "Development Environment",
         "en": "A workspace or setup where developers write, test, and debug their code before it is released to other environments. It usually includes all necessary tools, libraries, and configurations needed for coding and testing features without affecting production systems.",
         "se": "En arbetsmiljö där utvecklare skriver, testar och felsöker sin kod innan den släpps till andra miljöer. Innehåller verktyg och bibliotek för att utveckla utan att påverka produktionen.",
-        "se-simple": "En plats där utvecklare skriver och testar kod utan att störa det riktiga systemet."
+        "seSimple": "En plats där utvecklare skriver och testar kod utan att störa det riktiga systemet."
       },
       {
         "term": "Staging Environment",
         "en": "A pre-production environment that replicates the production environment as closely as possible. It is used to test new features and changes in a realistic setting before they are deployed to production.",
         "se": "En testmiljö som liknar produktionen så mycket som möjligt. Används för att testa nya funktioner innan de går live.",
-        "se-simple": "En nästan riktig miljö där man testar innan det släpps på riktigt."
+        "seSimple": "En nästan riktig miljö där man testar innan det släpps på riktigt."
       },
       {
         "term": "Production Environment (prod env)",
         "en": "The live environment where the application is available to end users. Stability, performance, and security are the main priorities in this environment.",
         "se": "Den skarpa miljön där applikationen används av riktiga användare. Fokus är på stabilitet, prestanda och säkerhet.",
-        "se-simple": "Den riktiga miljön där användarna kör programmet."
+        "seSimple": "Den riktiga miljön där användarna kör programmet."
       },
       {
         "term": "Release Management",
         "en": "The process of planning, scheduling, and controlling the movement of software releases into different environments, including testing and production.",
         "se": "Planering och styrning av hur mjukvara flyttas mellan testmiljöer och produktion.",
-        "se-simple": "Planen för hur och när ny kod ska släppas."
+        "seSimple": "Planen för hur och när ny kod ska släppas."
       },
       {
         "term": "Environment",
         "en": "In software development, an Environment refers to a distinct setup of hardware, software, and configuration settings where specific stages of the software lifecycle, such as development, testing, or production, are carried out. Different environments are used to isolate and manage changes in the application at various stages, ensuring that the software behaves correctly before it is released to end users.",
         "se": "Inom mjukvaruutveckling syftar Environment på en särskild uppsättning av hårdvara, mjukvara och konfiguration där olika stadier av mjukvarans livscykel, som utveckling, test eller produktion, genomförs. Olika miljöer används för att isolera och hantera ändringar i applikationen så att den fungerar korrekt innan den släpps till användare.",
-        "se-simple": "En plats där program utvecklas, testas eller körs på riktigt."
+        "seSimple": "En plats där program utvecklas, testas eller körs på riktigt."
       },
       {
         "term": "Deployment Pipeline",
         "en": "A series of automated steps that software goes through as it progresses from development to production. The pipeline typically includes stages such as building the application, running unit and integration tests, deploying to a staging environment for further testing, and finally, deploying to the production environment. Each stage in the pipeline ensures that the code is thoroughly tested and verified, reducing the risk of errors or bugs reaching the production environment. The pipeline is a critical component of Continuous Integration (CI) and Continuous Delivery (CD) practices, enabling faster and more reliable software releases.",
         "se": "En uppsättning automatiserade steg som mjukvara går igenom från utveckling till produktion. Pipen inkluderar vanligtvis byggsteg, tester, distribution till staging för vidare testning och slutligen distribution till produktion. Varje steg säkerställer att koden testas och verifieras för att minska risken för fel i produktionen. Deployment pipeline är en central del av CI/CD och möjliggör snabbare och mer tillförlitliga releaser.",
-        "se-simple": "En automatiserad process som bygger, testar och släpper ny kod steg för steg."
+        "seSimple": "En automatiserad process som bygger, testar och släpper ny kod steg för steg."
       },
       {
         "term": "Deploy",
         "en": "Deployment is the process of moving an application or its components from one environment to another, typically from development (dev) to testing (test), staging (stage), and finally to production (prod). Each environment serves a specific purpose: dev for development, where code is actively written and modified; test for quality assurance and automated testing; stage for final verification in an environment that closely mirrors production; and prod where the application is made available to end users. Deployment can involve several steps, including building the application, running tests, and transferring the application to the target servers.",
         "se": "Deployment är processen att flytta en applikation eller dess delar från en miljö till en annan, ofta från utveckling till test, staging och slutligen produktion. Varje miljö fyller en särskild funktion: dev för utveckling, test för kvalitetssäkring, stage för slutlig verifiering och prod för riktiga användare. Deployment kan inkludera byggning, tester och överföring av applikationen till servrar.",
-        "se-simple": "Att flytta ett program från utveckling till test och till slut till riktiga användare."
+        "seSimple": "Att flytta ett program från utveckling till test och till slut till riktiga användare."
       },
       {
         "term": "Docker",
         "en": "A platform for developing, shipping, and running applications inside lightweight, portable containers. These containers bundle the application code along with its dependencies, libraries, and configuration files, ensuring that the application runs consistently across different environments, whether on a developer's laptop, on-premise servers, or in the cloud. Docker simplifies the deployment process by allowing developers to package everything the application needs to run into a single container, avoiding the 'it works on my machine' problem.",
         "se": "En plattform för att utveckla, köra och distribuera applikationer i lätta, portabla containrar. Containrarna innehåller kod, beroenden, bibliotek och konfigurationer så att applikationen körs likadant överallt. Docker gör deployment enklare och eliminerar problemet med att något fungerar på en dator men inte på en annan.",
-        "se-simple": "Ett verktyg som paketerar program så att de fungerar likadant överallt."
+        "seSimple": "Ett verktyg som paketerar program så att de fungerar likadant överallt."
       },
       {
         "term": "Containerization",
         "en": "A lightweight form of virtualization that involves packaging an application along with its dependencies, libraries, and configuration files into a single, portable container. This container can run consistently across different environments, from development to production, regardless of underlying system differences. Containers are isolated from each other and the host system, but they share the host's operating system kernel, making them more efficient than traditional virtual machines.",
         "se": "En lättviktig form av virtualisering där en applikation och dess beroenden paketeras i en portabel container. Den körs konsekvent i olika miljöer, från utveckling till produktion. Containrar är isolerade från varandra men delar operativsystemets kärna, vilket gör dem mer effektiva än virtuella maskiner.",
-        "se-simple": "Att köra program i containrar som fungerar likadant i olika miljöer."
+        "seSimple": "Att köra program i containrar som fungerar likadant i olika miljöer."
       },
       {
         "term": "Serverless Computing",
         "en": "A cloud computing model where the cloud provider automatically manages the infrastructure, allowing developers to focus solely on writing and deploying code. In a serverless architecture, the server management and capacity planning are abstracted away, and the cloud provider dynamically allocates resources as needed. Developers deploy functions, which are small, independent pieces of code that execute in response to specific events. Popular serverless platforms include AWS Lambda, Azure Functions, and Google Cloud Functions.",
         "se": "En molnmodell där leverantören hanterar all infrastruktur och utvecklare bara fokuserar på kod. Serverhantering och kapacitetsplanering döljs, och resurser fördelas dynamiskt vid behov. Utvecklare distribuerar funktioner som körs när vissa händelser sker. Exempel är AWS Lambda, Azure Functions och Google Cloud Functions.",
-        "se-simple": "Ett sätt att köra kod i molnet utan att behöva tänka på servrar."
+        "seSimple": "Ett sätt att köra kod i molnet utan att behöva tänka på servrar."
       },
       {
         "term": "Edge Computing",
         "en": "A distributed computing paradigm that brings computation and data storage closer to the location where it is needed, typically at the 'edge' of the network, near the devices generating the data. This approach reduces latency, conserves bandwidth, and improves the performance of applications, particularly those requiring real-time processing, by processing data locally rather than relying on a centralized cloud infrastructure.",
         "se": "Ett sätt att placera beräkningar och datalagring närmare de enheter som genererar datan. Det minskar fördröjning, sparar bandbredd och förbättrar prestanda, särskilt för applikationer som kräver realtidsbearbetning, genom att behandla data lokalt istället för i ett centralt moln.",
-        "se-simple": "Att köra beräkningar nära där datan skapas, istället för långt borta i molnet."
+        "seSimple": "Att köra beräkningar nära där datan skapas, istället för långt borta i molnet."
       }
     ]
   },
   {
-    "category-name": "Arkitektur & Designmönster",
+    "categoryName": "Arkitektur & Designmönster",
     "terms": [
       {
         "term": "Monorepository (Monorepo)",
         "en": "A version control strategy where multiple projects or components are stored and managed within a single, unified repository. This approach allows all related codebases to coexist, enabling shared code, consistent tooling, and centralized versioning. While a monorepo can simplify development for smaller projects by keeping everything in one place, it can become difficult to manage as the project scales, potentially leading to challenges with build times, dependency management, and coordination among teams. For this reason, monorepos may be more suited to smaller or simpler projects rather than large, complex systems.",
         "se": "En strategi för versionshantering där flera projekt eller komponenter lagras i ett enda gemensamt repository. Detta gör det enklare att dela kod, använda samma verktyg och ha en central versionhantering. För små projekt kan detta vara praktiskt, men i stora system kan det skapa problem med byggtider, beroenden och samordning mellan team.",
-        "se-simple": "Alla projekt och komponenter sparas i samma kodförråd."
+        "seSimple": "Alla projekt och komponenter sparas i samma kodförråd."
       },
       {
         "term": "Multi-Tier Architecture",
         "en": "A software architecture pattern that separates an application into multiple, distinct layers or tiers, each responsible for specific aspects of the application's functionality. This separation of concerns helps to organize code, improve scalability, and manage complexity by allowing each tier to evolve independently. The most common form is a three-tier architecture, but applications can have more or fewer tiers depending on the design requirements.",
         "se": "Ett mönster där en applikation delas upp i flera lager eller nivåer som ansvarar för olika delar av funktionaliteten. Detta gör koden mer organiserad, skalbar och lättare att underhålla. Den vanligaste formen är tre lager, men det kan vara fler eller färre beroende på behov.",
-        "se-simple": "Att dela upp program i flera lager, t.ex. data, logik och gränssnitt."
+        "seSimple": "Att dela upp program i flera lager, t.ex. data, logik och gränssnitt."
       },
       {
         "term": "Microservice",
         "en": "An architectural style that structures an application as a collection of loosely coupled, independently deployable services. Each microservice is responsible for a specific piece of functionality, such as user authentication, payment processing, or product management, and communicates with other services over a network, typically using HTTP/REST, gRPC, or messaging queues. This approach contrasts with monolithic architectures, where all functionality is tightly integrated into a single application.",
         "se": "En arkitektur där en applikation delas upp i små, fristående tjänster som var och en ansvarar för en specifik funktion, t.ex. inloggning eller betalningar. Dessa tjänster kommunicerar via nätverk. Detta skiljer sig från monolitiska system där allt är samlat i en applikation.",
-        "se-simple": "Små delar av ett system som körs separat men samarbetar."
+        "seSimple": "Små delar av ett system som körs separat men samarbetar."
       },
       {
         "term": "Backend System",
         "en": "Refers to the server-side infrastructure of an application, handling business logic, database interactions, user authentication, and other core functions that occur behind the scenes. It serves as the backbone of an application, processing requests from the front end and sending appropriate responses.",
         "se": "Avser serverdelen av en applikation som hanterar logik, databaser, användarhantering och andra centrala funktioner som sker i bakgrunden.",
-        "se-simple": "Den del av programmet som körs på servern och sköter logik och data."
+        "seSimple": "Den del av programmet som körs på servern och sköter logik och data."
       },
       {
         "term": "Frontend System",
         "en": "Refers to the collection of tools, libraries, frameworks, and technologies used to build the user-facing part of a web application or website. This system is responsible for everything users interact with directly in their web browsers, including the user interface, navigation, content rendering, and dynamic behavior. A robust frontend system ensures a responsive, interactive, and seamless user experience across different devices and platforms.",
         "se": "Avser verktyg, ramverk och tekniker som används för att bygga den del av en webbapplikation som användarna ser och interagerar med. Det omfattar gränssnitt, navigation, innehåll och dynamiskt beteende.",
-        "se-simple": "Den del av hemsidan som användaren ser och använder."
+        "seSimple": "Den del av hemsidan som användaren ser och använder."
       },
       {
         "term": "WebMVC (Model-View-Controller)",
         "en": "A design pattern used in web development to separate concerns within an application. It divides an application into three interconnected components: the Model (which represents the data or business logic), the View (which represents the UI or presentation layer), and the Controller (which handles user input and updates the Model and View accordingly). This pattern is commonly used in web frameworks to organize code in a way that promotes modularity, scalability, and maintainability.",
         "se": "Ett mönster som delar upp en applikation i tre delar: Model (data och logik), View (gränssnitt) och Controller (hanterar inmatning och uppdaterar Model och View). Används ofta i webbapplikationer för att organisera koden.",
-        "se-simple": "Ett sätt att dela upp kod i data, gränssnitt och styrning."
+        "seSimple": "Ett sätt att dela upp kod i data, gränssnitt och styrning."
       },
       {
         "term": "Component",
         "en": "In React, a Component is a reusable, self-contained piece of UI that encapsulates its own structure, logic, and style. Components can be either functional or class-based and are the building blocks of a React application. They receive data via props and manage their own state to render UI dynamically based on user interaction or data changes. In a broader software architecture context, a Component can also refer to a backend microservice or any modular part of a system that performs a specific function independently. In this case, components interact with each other via well-defined interfaces, often through APIs or message queues, contributing to the overall functionality of an application.",
         "se": "I React är en komponent en återanvändbar, självständig del av gränssnittet med egen struktur, logik och stil. I ett bredare sammanhang kan en komponent också vara en del av backend eller annan modulär del av systemet som sköter en funktion.",
-        "se-simple": "En modul som sköter en del av ett system, t.ex. en knapp eller en tjänst."
+        "seSimple": "En modul som sköter en del av ett system, t.ex. en knapp eller en tjänst."
       },
       {
         "term": "DRY (Don't Repeat Yourself)",
         "en": "A principle of software development aimed at reducing repetition of code, logic, or data within a system. The DRY principle encourages developers to avoid duplicating code by abstracting repeated logic or data into reusable components, functions, or modules. This approach promotes cleaner, more maintainable code, and reduces the risk of errors by ensuring that any change only needs to be made in one place.",
         "se": "En princip som handlar om att undvika upprepning av kod och logik. Istället bör man återanvända komponenter och funktioner för att få renare och lättare underhållen kod.",
-        "se-simple": "En regel som säger att man inte ska skriva samma kod flera gånger."
+        "seSimple": "En regel som säger att man inte ska skriva samma kod flera gånger."
       },
       {
         "term": "Twelve Factor App",
         "en": "A methodology for building modern, scalable, and maintainable software-as-a-service (SaaS) applications. It was introduced by developers at Heroku to provide best practices for building web applications that can be easily deployed and scaled in cloud environments. The methodology outlines twelve principles that address various aspects of software development, from codebase management to deployment and operational concerns.",
         "se": "En metod för att bygga moderna och skalbara molnapplikationer. Skapades av Heroku och innehåller tolv principer för bästa praxis inom kodhantering, deployment och drift.",
-        "se-simple": "En lista med regler för hur man bygger bra molnapplikationer."
+        "seSimple": "En lista med regler för hur man bygger bra molnapplikationer."
       }
     ]
   },
   {
-    "category-name": "Programmeringsspråk & Modulsystem",
+    "categoryName": "Programmeringsspråk & Modulsystem",
     "terms": [
       {
         "term": "Interpreter",
         "en": "A type of program that directly executes instructions written in a programming or scripting language without requiring them to be compiled into machine code first. Instead of translating the entire source code into a lower-level language (as a compiler does), an interpreter processes the source code line by line or statement by statement, translating and executing it on the fly. This can lead to slower execution times compared to compiled languages, but offers the advantage of immediate execution and ease of debugging.",
         "se": "En typ av program som direkt exekverar instruktioner skrivna i ett programmerings- eller skriptspråk utan att först kompileras till maskinkod. Tolken bearbetar koden rad för rad eller sats för sats och exekverar den direkt. Detta gör körningen långsammare än med kompilerade språk men enklare att testa och felsöka.",
-        "se-simple": "Ett program som kör koden rad för rad direkt."
+        "seSimple": "Ett program som kör koden rad för rad direkt."
       },
       {
         "term": "Compiler",
         "en": "A program that translates code written in a high-level programming language (such as C, C++, or Java) into a lower-level language, typically machine code or bytecode, that can be executed directly by a computer's hardware or runtime environment. The primary goal of a compiler is to optimize and produce efficient executable code that can run on the target machine. A Transpiler (like Babel) also translates code, but instead of converting it to a lower-level language, it converts it from one high-level language or version to another (e.g., modern JavaScript ES6 to ES5). While a compiler targets machine-level code, a transpiler typically focuses on maintaining the same level of abstraction, just making the code compatible with different environments or versions.",
         "se": "Ett program som översätter kod skriven i högnivåspråk (som C, C++ eller Java) till ett lägre nivåspråk, oftast maskinkod eller bytekod, som kan köras direkt av datorn. Syftet är att skapa optimerad och effektiv körbar kod. En transpiler översätter däremot mellan språk eller versioner på samma nivå.",
-        "se-simple": "Ett program som översätter kod till språk som datorn kan köra."
+        "seSimple": "Ett program som översätter kod till språk som datorn kan köra."
       },
       {
         "term": "Transpiler",
         "en": "A type of compiler that translates source code from one programming language or syntax into another language or syntax at the same level of abstraction. In web development, transpilers are often used to convert modern JavaScript (ES6+) or JSX (used in React) into a version of JavaScript that is compatible with older browsers or environments that do not natively support newer syntax.",
         "se": "En typ av kompilator som översätter källkod från ett språk eller syntax till ett annat på samma abstraktionsnivå. Vanligt i webbutveckling för att göra modern JavaScript kompatibel med äldre webbläsare.",
-        "se-simple": "Ett program som gör om ny kod till äldre versioner som fler kan använda."
+        "seSimple": "Ett program som gör om ny kod till äldre versioner som fler kan använda."
       },
       {
         "term": "CommonJS",
         "en": "A module system for JavaScript, primarily used in server-side development with Node.js. It allows developers to structure their code into reusable modules, making it easier to manage dependencies and maintain large codebases. Modules in CommonJS are loaded synchronously using the require function, and they export their functionality using module.exports.",
         "se": "Ett modulsystem för JavaScript, främst i Node.js. Gör det möjligt att dela upp koden i återanvändbara moduler. Moduler laddas med require och exporteras med module.exports.",
-        "se-simple": "Ett sätt att dela upp och återanvända kod i Node.js."
+        "seSimple": "Ett sätt att dela upp och återanvända kod i Node.js."
       },
       {
         "term": "Require",
         "en": "require is a function in Node.js, used as part of the CommonJS module system, to synchronously load and use modules. It allows you to import functionality from other files or modules into your current file. Unlike the ES6 import statement, require can be called conditionally and at any point in the code, making it flexible but synchronous in nature. require is primarily used in Node.js environments to load CommonJS modules.",
         "se": "require är en funktion i Node.js som används i CommonJS-modulsystemet för att synkront ladda och använda moduler. Till skillnad från import kan require anropas när som helst i koden.",
-        "se-simple": "Ett sätt att hämta in kod från andra filer i Node.js."
+        "seSimple": "Ett sätt att hämta in kod från andra filer i Node.js."
       },
       {
         "term": "Import (ES6 Modules)",
         "en": "A statement in JavaScript used to bring in modules and their exports from other files into the current file. It is part of the ES6 module system, which is designed to allow for modular programming and code reuse. Unlike require, import is statically analyzed, meaning it is hoisted and processed before the rest of the code runs. import supports both named imports and default imports, and while it is usually static, dynamic imports are also possible using import().",
         "se": "En sats i JavaScript för att importera moduler och deras exporter från andra filer. Är en del av ES6-modulsystemet som gör kod mer modulär. import analyseras innan koden körs, till skillnad från require.",
-        "se-simple": "Ett modernt sätt att hämta in kod från andra filer i JavaScript."
+        "seSimple": "Ett modernt sätt att hämta in kod från andra filer i JavaScript."
       },
       {
         "term": "ECMAScript 6 (ES6)",
         "en": "ES6, also known as ECMAScript 2015, is the sixth edition of the ECMAScript language specification, and it brought significant updates to JavaScript. ES6 introduced new features and syntax that improved the language's power, readability, and ease of use, especially for building complex applications. Browser Support: Modern browsers have largely adopted ES6 features, but older browsers may require transpilation (e.g., using Babel) to convert ES6 code into ES5, ensuring compatibility.",
         "se": "ES6, även kallad ECMAScript 2015, är den sjätte versionen av ECMAScript-specifikationen. Den introducerade stora nyheter i JavaScript som förbättrade språkets kraft och läsbarhet. Moderna webbläsare stöder ES6, men äldre kräver transpilation till ES5.",
-        "se-simple": "En nyare version av JavaScript med fler funktioner."
+        "seSimple": "En nyare version av JavaScript med fler funktioner."
       },
       {
         "term": "Node",
         "en": "Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code on the server side. Built on Chrome's V8 JavaScript engine, Node.js is designed for building scalable, high-performance applications, particularly those that require real-time data interaction, such as web servers, APIs, and streaming services. Node.js uses an event-driven, non-blocking I/O model, making it efficient and suitable for applications that handle a large number of simultaneous connections.",
         "se": "Node.js är en öppen källkod och plattformsoberoende JavaScript-runtime för att köra JavaScript på serversidan. Byggd på Chromes V8-motor och designad för skalbara och högpresterande applikationer.",
-        "se-simple": "Ett sätt att köra JavaScript på servern, inte bara i webbläsaren."
+        "seSimple": "Ett sätt att köra JavaScript på servern, inte bara i webbläsaren."
       },
       {
         "term": "Express",
         "en": "Express.js is a minimal and flexible web application framework for Node.js. It provides a robust set of features for building web and mobile applications, including tools for routing, middleware management, and handling HTTP requests and responses. Express.js simplifies the process of creating server-side applications, allowing developers to focus on writing the business logic rather than dealing with the underlying infrastructure.",
         "se": "Express.js är ett ramverk för Node.js som gör det enklare att bygga webbapplikationer och API:er. Det erbjuder routing, middleware och hantering av HTTP-förfrågningar.",
-        "se-simple": "Ett verktyg som gör det enklare att bygga servrar med Node.js."
+        "seSimple": "Ett verktyg som gör det enklare att bygga servrar med Node.js."
       },
       {
         "term": "Client-Side Scripting",
         "en": "Refers to the execution of scripts, typically written in languages like JavaScript, within the user's web browser rather than on the server. This allows web pages to be dynamic, interactive, and responsive to user input without requiring a page reload. Common tasks for client-side scripts include form validation, DOM manipulation, and making asynchronous requests to a server (AJAX).",
         "se": "Avser körning av skript i användarens webbläsare istället för på servern. Detta gör webbsidor mer interaktiva och responsiva utan att sidan behöver laddas om.",
-        "se-simple": "Kod som körs direkt i webbläsaren, t.ex. för interaktiva sidor."
+        "seSimple": "Kod som körs direkt i webbläsaren, t.ex. för interaktiva sidor."
       },
       {
         "term": "Server-Side Scripting",
         "en": "The process of writing code that runs on a server rather than on the client (browser). This scripting is responsible for generating dynamic web content, interacting with databases, handling user requests, and managing application logic before sending the final output to the client's browser. Common server-side scripting languages include PHP, Node.js (JavaScript), Python, Ruby, and Java.",
         "se": "Kod som körs på en server istället för i webbläsaren. Den skapar dynamiskt innehåll, pratar med databaser och hanterar användarförfrågningar.",
-        "se-simple": "Kod som körs på servern och skickar resultatet till webbläsaren."
+        "seSimple": "Kod som körs på servern och skickar resultatet till webbläsaren."
       },
       {
         "term": "API (Application Programming Interface)",
         "en": "A set of rules that allows different software applications to communicate with each other.",
         "se": "Ett regelverk som gör det möjligt för olika mjukvaror att kommunicera med varandra.",
-        "se-simple": "Ett sätt för olika program att prata med varandra."
+        "seSimple": "Ett sätt för olika program att prata med varandra."
       },
       {
         "term": "RESTful (Representational State Transfer)",
         "en": "A style of web service architecture that follows the principles of REST (Representational State Transfer). RESTful services are designed to be stateless, scalable, and easily maintainable, allowing different systems to communicate over the web using standard HTTP methods like GET, POST, PUT, DELETE, etc. RESTful APIs are commonly used to expose data and functionality of web applications to other systems, such as front-end clients or other backend services.",
         "se": "En arkitektur för webbtjänster som följer REST-principerna. RESTful-tjänster är stateless, skalbara och enkla att underhålla. De använder standard-HTTP-metoder som GET, POST och DELETE.",
-        "se-simple": "Ett sätt för system att prata via webben med vanliga webbanrop."
+        "seSimple": "Ett sätt för system att prata via webben med vanliga webbanrop."
       },
       {
         "term": "Persistency",
         "en": "In JavaScript, persistency refers to the ability to store data in a way that it remains available across different sessions, application restarts, or system reboots. Persistent storage ensures that data is not lost when a user closes their browser or when a server shuts down, making it crucial for maintaining state, user preferences, and application data over time.",
         "se": "I JavaScript betyder persistens att data sparas så att den finns kvar även efter att användaren stänger webbläsaren eller när servern startas om. Detta är viktigt för att bevara state, användarinställningar och data.",
-        "se-simple": "Att spara data så att den inte försvinner när man stänger webbläsaren."
+        "seSimple": "Att spara data så att den inte försvinner när man stänger webbläsaren."
       }
     ]
   },
   {
-    "category-name": "Testning",
+    "categoryName": "Testning",
     "terms": [
       {
         "term": "Unit Testing",
         "en": "A software testing method where individual units or components of a software application are tested in isolation from the rest of the application. The primary goal of unit testing is to verify that each unit functions correctly on its own. Unit tests are typically written and run by developers and are known for being fast and efficient, providing quick feedback on the correctness of the code during development.",
         "se": "En testmetod där enskilda enheter eller komponenter i en applikation testas isolerat från resten av systemet. Målet är att verifiera att varje enhet fungerar korrekt på egen hand. Unit-tester är snabba och skrivs oftast av utvecklare för att snabbt ge återkoppling om kodens korrekthet.",
-        "se-simple": "Testar små delar av koden för att se att de fungerar."
+        "seSimple": "Testar små delar av koden för att se att de fungerar."
       },
       {
         "term": "Component Testing",
         "en": "Involves testing individual components of a software application in isolation to ensure they function correctly. This type of testing treats the component as a 'black box,' focusing on the inputs and expected outputs without considering the internal workings. It's commonly used in the context of UI components in frameworks like React, where you test how a specific component behaves under various conditions.",
         "se": "Test av enskilda komponenter i en applikation för att se till att de fungerar som de ska. Testet fokuserar på indata och förväntade resultat utan att titta på komponentens inre logik. Vanligt inom UI-testning i t.ex. React.",
-        "se-simple": "Testar enskilda delar, som en knapp eller komponent i en app."
+        "seSimple": "Testar enskilda delar, som en knapp eller komponent i en app."
       },
       {
         "term": "Integration Testing",
         "en": "A level of software testing where individual units or components are combined and tested as a group. The primary goal of integration testing is to identify issues that occur when different components interact with each other, such as mismatches in data formats, incorrect interfaces, or unexpected behavior when units are integrated. This type of testing ensures that the components of a system work together as expected and that their interactions produce the correct results.",
         "se": "En testnivå där olika komponenter eller moduler kombineras och testas tillsammans. Syftet är att upptäcka problem som uppstår vid interaktion mellan enheterna, som fel i dataformat eller gränssnitt.",
-        "se-simple": "Testar att olika delar fungerar ihop."
+        "seSimple": "Testar att olika delar fungerar ihop."
       },
       {
         "term": "End User Testing (UAT)",
         "en": "The final phase of the software testing process where the actual users of the software test the system in a real-world environment to ensure that it meets their needs and requirements. This type of testing focuses on validating that the software performs as expected from the user's perspective, addressing both functionality and usability before the product is released to production.",
         "se": "Den sista testfasen där riktiga användare testar systemet i en verklig miljö för att se att det uppfyller deras behov. Fokuserar på både funktionalitet och användbarhet innan lansering.",
-        "se-simple": "Användare testar om programmet fungerar som de vill."
+        "seSimple": "Användare testar om programmet fungerar som de vill."
       },
       {
         "term": "Test-Driven Development (TDD)",
         "en": "A software development process in which developers write tests for a new feature or functionality before writing the actual code to implement it. The TDD cycle typically involves writing a failing test, writing the minimum code necessary to pass the test, and then refactoring the code while ensuring that all tests continue to pass. TDD promotes the creation of cleaner, more reliable code by ensuring that every piece of functionality is backed by a corresponding test.",
         "se": "En utvecklingsmetod där tester skrivs innan själva koden. Cykeln är: skriv ett misslyckat test, skriv minsta möjliga kod för att klara testet, och refaktorera sedan koden. TDD leder till mer pålitlig och välstrukturerad kod.",
-        "se-simple": "Man skriver tester först och kodar sen så att testerna går igenom."
+        "seSimple": "Man skriver tester först och kodar sen så att testerna går igenom."
       },
       {
         "term": "Double Dummy",
         "en": "In software testing, a Dummy is a type of testing double used as a placeholder object that is passed around but never actually used in the test. Dummies are typically utilized when a method or function requires an argument, but the specific value of that argument is irrelevant to the test being conducted. The primary purpose of a dummy is to fulfill the requirements of the function signature without influencing the outcome of the test.",
         "se": "En Dummy är en test-dubbel som fungerar som en platshållare i tester. Den används när en metod kräver ett argument, men värdet är irrelevant för testet.",
-        "se-simple": "En fejk som bara fyller en plats men inte gör något."
+        "seSimple": "En fejk som bara fyller en plats men inte gör något."
       },
       {
         "term": "Double Stub",
         "en": "A type of testing double used in software testing that replaces a real object or method with a simplified version that provides predefined responses. Unlike mocks or spies, stubs do not record interactions or track how they are used; they simply return hard-coded values or responses when called. Stubs are particularly useful when you need to isolate the component under test by removing dependencies on external systems or complex objects, ensuring that the test focuses solely on the logic being tested.",
         "se": "En Stub är en test-dubbel som ersätter ett objekt eller metod med en förenklad version som returnerar fördefinierade svar. Den loggar inte anrop, utan används för att isolera testet från externa beroenden.",
-        "se-simple": "En fejk som alltid ger samma svar."
+        "seSimple": "En fejk som alltid ger samma svar."
       },
       {
         "term": "Double Fake",
         "en": "A type of testing double used in software testing that provides a working, but simplified, implementation of a component or service. Unlike dummies or stubs, which do not carry out any real logic, a fake mimics the behavior of a real object but with less complexity, making it suitable for testing purposes. Fakes are often used when the real object is too resource-intensive or complex to use in a test environment, such as a database or an external API.",
         "se": "En Fake är en test-dubbel som har en fungerande men förenklad version av en komponent eller tjänst. Den används istället för den riktiga när denna är för tung eller komplex för testmiljön.",
-        "se-simple": "En förenklad version som fungerar på riktigt men enklare."
+        "seSimple": "En förenklad version som fungerar på riktigt men enklare."
       },
       {
         "term": "Double Spy",
         "en": "A Spy is a type of testing double used in software testing that wraps around a real object or function and records information about how it is used during the test, such as method calls and the arguments passed. Unlike mocks or stubs, a spy does not replace the original functionality; instead, it monitors and tracks interactions without altering the behavior of the underlying code. Spies are particularly useful for verifying that certain methods were called, how many times they were called, and with what parameters, while still allowing the original logic to be executed.",
         "se": "En Spy är en test-dubbel som används för att övervaka hur en metod eller funktion anropas under ett test. Den ersätter inte logiken utan loggar bara interaktioner som vilka metoder som körts och med vilka argument.",
-        "se-simple": "En fejk som kollar hur en funktion används."
+        "seSimple": "En fejk som kollar hur en funktion används."
       },
       {
         "term": "Double Mock",
         "en": "A type of testing double used in software testing that not only simulates the behavior of real objects but also records the interactions with it, such as method calls and arguments passed. Mocks are particularly useful when you need to verify that certain methods were called during the execution of a test and to check the specific interactions between components. Mocks can be pre-programmed with expectations that define what methods should be called and with what parameters, making them more sophisticated than other testing doubles like stubs or dummies.",
         "se": "En Mock är en test-dubbel som både simulerar beteendet av ett riktigt objekt och loggar interaktionerna. Den kan förväntas anropas på ett visst sätt och testet misslyckas om detta inte sker.",
-        "se-simple": "En fejk som både beter sig som det riktiga och kollar hur det används."
+        "seSimple": "En fejk som både beter sig som det riktiga och kollar hur det används."
       },
       {
         "term": "Jest",
         "en": "A popular JavaScript testing framework developed by Facebook, designed primarily for testing React applications, but also suitable for any JavaScript project. Jest provides a powerful, flexible, and easy-to-use environment for writing and running tests. It includes features like zero-configuration setup, an easy-to-understand syntax, built-in mocking capabilities, and snapshot testing. Jest also supports testing asynchronous code and has a rich set of matchers for assertions.",
         "se": "Ett populärt JavaScript-testframework utvecklat av Facebook, främst för React men även för andra projekt. Jest är lätt att använda, kräver ingen konfiguration och erbjuder funktioner som mocking och snapshot-tester.",
-        "se-simple": "Ett verktyg för att testa JavaScript-kod, ofta med React."
+        "seSimple": "Ett verktyg för att testa JavaScript-kod, ofta med React."
       },
       {
         "term": "React Testing Library",
         "en": "A lightweight testing utility that provides tools for testing React components. Unlike traditional testing frameworks, React Testing Library focuses on testing components from the perspective of the user, ensuring that your tests are more reliable and maintainable by simulating user interactions and verifying the behavior of the component as it would be in a real environment. It is often used in conjunction with testing frameworks like Jest.",
         "se": "Ett lättviktigt testverktyg för React-komponenter. Det fokuserar på att testa komponenter ur användarens perspektiv genom att simulera interaktioner och kontrollera beteende. Ofta används det tillsammans med Jest.",
-        "se-simple": "Ett verktyg för att testa React-komponenter som användaren ser dem."
+        "seSimple": "Ett verktyg för att testa React-komponenter som användaren ser dem."
       },
       {
         "term": "Cypress",
         "en": "A modern, end-to-end testing framework designed specifically for web applications. It allows developers to write tests that run directly in the browser, simulating user interactions and verifying that the application behaves as expected. Cypress is known for its fast execution, real-time reloading, and built-in dashboard that provides detailed insights into test results. It's particularly popular for testing complex JavaScript applications built with frameworks like React, Angular, and Vue.js.",
         "se": "Ett modernt end-to-end-testframework för webbläsarapplikationer. Cypress kör tester direkt i webbläsaren och simulerar användarinteraktioner. Det är snabbt, erbjuder live-reload och ett detaljerat dashboard för testresultat.",
-        "se-simple": "Ett verktyg för att testa hela webbsidor som en simulerad användare klickar runt i."
+        "seSimple": "Ett verktyg för att testa hela webbsidor som en simulerad användare klickar runt i."
       }
     ]
   },
   {
-    "category-name": "CI/CD & monitoring",
+    "categoryName": "CI/CD & monitoring",
     "terms": [
       {
         "term": "Continuous Integration (CI)",
         "en": "The practice of frequently integrating code changes into a shared repository, where automated builds and tests are run to catch errors early.",
         "se": "Att ofta slå ihop kodändringar till en gemensam kodbas och köra automatiska tester för att hitta fel tidigt.",
-        "se-simple": "Automatiska tester körs varje gång ny kod läggs till."
+        "seSimple": "Automatiska tester körs varje gång ny kod läggs till."
       },
       {
         "term": "Continuous Deployment (CD)",
         "en": "An extension of Continuous Integration where code changes are automatically deployed to production after passing automated tests, ensuring that software is always in a releasable state.",
         "se": "Kod som automatiskt släpps till produktionen efter att den klarat tester. Säkerställer att mjukvaran alltid kan användas.",
-        "se-simple": "Ny kod som fungerar bra går direkt ut till användarna."
+        "seSimple": "Ny kod som fungerar bra går direkt ut till användarna."
       },
       {
         "term": "GitHub Actions",
         "en": "A powerful CI/CD platform that allows developers to automate tasks, such as building, testing and deploying code, directly from their GitHub repositories. With GitHub Actions, you can create custom workflows that are triggered by specific events (like a push, pull request, or issue creation) to streamline your development process.",
         "se": "En kraftfull CI/CD-plattform som låter utvecklare automatisera uppgifter såsom bygg, test och driftsättning direkt från sina GitHub-repositories. Med GitHub Actions kan du skapa anpassade arbetsflöden som triggas av specifika händelser (som push, pull request eller skapande av issue) för att effektivisera utvecklingsprocessen.",
-        "se-simple": "I/CD-verktyg integrerat i GitHub. Automatiserar bygg, test och deployment vid händelser som push/pull request"
+        "seSimple": "I/CD-verktyg integrerat i GitHub. Automatiserar bygg, test och deployment vid händelser som push/pull request"
       },
       {
         "term": "Continuos Monitoring",
         "en": "The practice of constantly tracking, analiyzing and reporting the performance, security and reliability of an application or system in real-time. This process helps to identify and resolve issues before they affect end users, ensuring the application runs smoothly. Continuous monitoring typically involves tracking metrics such as system health, uptime, response times, error rates, and security threats.",
         "se": "Praktiken att kontinuerligt spåra, analysera och rapportera prestanda, säkerhet och tillförlitlighet för en applikation eller ett system i realtid. Denna process hjälper till att identifiera och åtgärda problem innan de påverkar slutanvändare och säkerställer att applikationen körs smidigt. Kontinuerlig övervakning innebär vanligtvis att man följer mätvärden såsom systemhälsa, upptid, svarstider, felfrekvenser och säkerhetshot.",
-        "se-simple": "Kontinuerlig övervakning av prestanda, fel och säkerhet. Hjälper att upptäcka problem innan de drabbar användare."
+        "seSimple": "Kontinuerlig övervakning av prestanda, fel och säkerhet. Hjälper att upptäcka problem innan de drabbar användare."
       }
     ]
   },
   {
-    "category-name": "Andra koncept och verktyg",
+    "categoryName": "Andra koncept och verktyg",
     "terms": [
       {
         "term": "Markdown (MD)",
         "en": "A lightweight markup language used for formatting text. It is designed to be easy to read and write, using plain text formatting syntax that can be converted to HTML, for web content, Markdown is widely used for writing documentation, README files, blog posts, and other content where simplicity and readability in plain text are important. (Key Features: Simple Syntax, Easy to Convert, Widespread Use)",
         "se": "Ett lättviktigt märkspråk som används för att formatera text. Det är utformat för att vara lätt att läsa och skriva, med ren text-syntax som kan konverteras till HTML för webbinnehåll. Markdown används i stor utsträckning för att skriva dokumentation, README-filer, blogginlägg och annat innehåll där enkelhet och läsbarhet i klartext är viktigt. (Nyckelfunktioner: Enkel syntax, lätt att konvertera, utbredd användning)",
-        "se-simple": "Ett enkelt textformat som konverteras till HTML. Vanligt för README-filer och dokumentation."
+        "seSimple": "Ett enkelt textformat som konverteras till HTML. Vanligt för README-filer och dokumentation."
       },
       {
         "term": "YAML (YAML Ain't Markup Language)",
         "en": "A human-readable data serialization format commonly used for configuration files and data exchange between languages with different data structures. The .yml or .yaml file extension is used for files written in YAML. It is known for its simplicity and ease of use, allowing developers to define data in a clear and structured manner without the complexity of other formats like XML or JSON.",
         "se": "Ett människoläsbart serialiseringsformat för data, ofta använt för konfigurationsfiler och datautbyte mellan språk med olika datastrukturer. Filändelsen .yml eller .yaml används för YAML-filer. YAML är känt för sin enkelhet och användbarhet, vilket gör det möjligt att definiera data på ett tydligt och strukturerat sätt utan komplexiteten i exempelvis XML eller JSON.",
-        "se-simple": "Ett lättläst format för konfigurationsfiler. Vanligt i CI/CD och Docker."
+        "seSimple": "Ett lättläst format för konfigurationsfiler. Vanligt i CI/CD och Docker."
       },
       {
         "term": "Hot Module Replacement (HMR)",
         "en": "A feature in modern web development tools that allows modules of an application to be updated in the browser without requiring a full page reload. This feature is particularly useful during development, as it enables faster iteration by instantly applying changes to the application's code while preserving the current state.",
         "se": "En funktion i moderna utvecklingsverktyg som gör det möjligt att uppdatera moduler i en applikation i webbläsaren utan full omladdning av sidan. Detta är särskilt användbart under utveckling då det möjliggör snabbare iteration genom att direkt tillämpa kodändringar samtidigt som aktuellt tillstånd bevaras.",
-        "se-simple": "Uppdaterar kod under utveckling utan att sidan laddas om."
+        "seSimple": "Uppdaterar kod under utveckling utan att sidan laddas om."
       },
       {
         "term": "TTFHW (Time to First Hello World)",
         "en": "Refers to the amount of time it takes for a developer to set up a project or environment and reach the point where they can run a basic 'Hello World!' program. This metric is often used to measure how quickly and easily a new developer can get started with a tool, framework, or project. A lower TTFHW indicates a more user-friendly setup process and a smoother onboarding experience.",
         "se": "Avser den tid det tar för en utvecklare att sätta upp ett projekt eller en miljö och nå punkten där hen kan köra ett grundläggande 'Hello World!'-program. Detta mått används ofta för att bedöma hur snabbt och enkelt en ny utvecklare kan komma igång med ett verktyg, ramverk eller projekt. Ett lägre TTFHW indikerar en mer användarvänlig setup och en smidigare onboarding-upplevelse.",
-        "se-simple": "Mått på hur snabbt en utvecklare kan sätta upp och köra ett första exempel. Lågt värde = lätt att komma igång."
+        "seSimple": "Mått på hur snabbt en utvecklare kan sätta upp och köra ett första exempel. Lågt värde = lätt att komma igång."
       }
     ]
   }
