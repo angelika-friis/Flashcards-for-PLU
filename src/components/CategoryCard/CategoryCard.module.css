@@ -1,0 +1,26 @@
+.categoryCard {
+    padding: 25px 7.5%;
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.numOfCards {
+    margin-left: auto;
+}
+
+.checkIcon {
+    font-size: 2rem;
+    min-width: 25px;
+}
+
+.categoryCard div {
+    display: flex;
+    align-items: center;
+    direction: row;
+    gap: 5%;
+    min-width: 75%;
+}

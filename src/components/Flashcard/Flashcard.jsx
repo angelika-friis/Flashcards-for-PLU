@@ -31,19 +31,21 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, langua
                 >
                     <Icon icon="tabler:chevron-left" />
                 </IconButton>
-                <Typography variant="body1" color="text.disabled">{index + 1} / {numOfCards}</Typography>
+                <div className={styles.numOfCards}>
+                    <Typography >{index + 1} / {numOfCards}</Typography>
+                </div>
             </Stack>
             <Stack gap={3} className={styles.cardContainer}>
                 <Stack direction={"row"} gap={2}>
-                    {[{ buttonName: 'en', value: 'en' }, { buttonName: 'sv', value: 'se' }, { buttonName: 'enkel', value: 'seSimple' }].map((lang) => (
+                    {[{ name: 'en', value: 'en' }, { name: 'sv', value: 'se' }, { name: 'enkel', value: 'seSimple' }].map((button) => (
                         <Button
-                            key={lang.value}
+                            key={button.value}
                             variant="contained"
                             size="small"
-                            sx={{ borderRadius: "20px", textTransform: "none" }}
-                            onClick={() => setLanguage(lang.value)}
+                            sx={{ borderRadius: "20px", textTransform: "none", backgroundColor: button.value === language ? "primary.light" : "primary.main" }}
+                            onClick={() => setLanguage(button.value)}
                         >
-                            {lang.buttonName}
+                            {button.name}
                         </Button>
                     ))}
                 </Stack>
