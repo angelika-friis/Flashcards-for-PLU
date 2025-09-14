@@ -4,14 +4,14 @@
     "terms": [
       {
         "term": "Version Control",
-        "en": "A system that records changes to files over time so that you can recall specific versions later. It allows multiple developers to collaborate on a project by tracking and managing changes to the codebase. Version control systems (VCS) enable developers to work simultaneously on different parts of a project, keep track of every modification, and revert back to previous versions if necessary.",
-        "se": "Ett system som registrerar ändringar i filer över tid så att du kan återkalla specifika versioner senare. Det gör det möjligt för flera utvecklare att samarbeta i ett projekt genom att spåra och hantera ändringar i kodbasen. Versionshanteringssystem (VCS) gör det möjligt att arbeta samtidigt på olika delar av ett projekt, hålla reda på varje ändring och återställa tidigare versioner vid behov.",
+        "en": "A system that records changes to files over time so that you can recall specific versions later. It allows multiple developers to collaborate on a project by tracking and managing changes to the codebase. *Version control systems (VCS)* enable developers to work simultaneously on different parts of a project, keep track of every modification, and revert back to previous versions if necessary.",
+        "se": "Ett system som **registrerar ändringar** i filer över tid så att du **kan återkalla specifika versioner senare**.\nDet gör det möjligt för flera utvecklare att samarbeta i ett projekt genom att spåra och hantera ändringar i kodbasen. *Versionshanteringssystem (VCS)* gör det möjligt att arbeta samtidigt på olika delar av ett projekt, hålla reda på varje ändring och återställa tidigare versioner vid behov.",
         "seSimple": "Ett sätt att spara och hålla koll på olika versioner av filer eller kod så att man kan samarbeta och backa om något blir fel."
       },
       {
         "term": "Repository",
         "en": "A central location where code and its history are stored and managed, typically using a version control system like Git. It acts as a storage space for all the files, directories, and related resources of a project, along with their version history, enabling collaboration, version tracking, and management of code changes over time. Repositories can be hosted locally on a developer's machine or remotely on platforms like GitHub, GitLab or Bitbucket.",
-        "se": "En central plats där kod och dess historik lagras och hanteras, vanligtvis med ett versionshanteringssystem som Git. Det fungerar som lagringsutrymme för alla filer, kataloger och relaterade resurser i ett projekt, tillsammans med deras versionshistorik, vilket möjliggör samarbete, spårning av versioner och hantering av kodändringar över tid. Repositories kan hostas lokalt på en utvecklares dator eller externt på plattformar som GitHub, GitLab eller Bitbucket.",
+        "se": "**En central plats där kod och dess historik lagras och hanteras**, vanligtvis med ett *versionshanteringssystem* som Git. Det fungerar som **lagringsutrymme för alla filer, kataloger och relaterade resurser i ett projekt, tillsammans med deras versionshistorik**, vilket möjliggör samarbete, spårning av versioner och hantering av kodändringar över tid. Repositories kan hostas lokalt på en utvecklares dator eller externt på plattformar som GitHub, GitLab eller Bitbucket.",
         "seSimple": "En plats där projektets filer och alla versioner sparas, antingen på datorn eller på nätet."
       },
       {
@@ -71,7 +71,7 @@
         "term": "Bundling",
         "en": "The process of combining multiple files, such as JavaScript, CSS and other assets, into a single or a few output files. This is done to reduce the number of HTTP requests needed to load a webpage, which can improve the loading speed and overall performance of web applications.",
         "se": "Processen att kombinera flera filer, som JavaScript, CSS och andra resurser, till en eller några få filer för att minska antalet HTTP-förfrågningar och förbättra laddningstiden.",
-        "seSimple": "Slår ihop flera filer (så som JS och CSS) till färre filer för snabbare laddning."
+        "seSimple": "Slår ihop flera filer (så som JS och CSS) till färre filer för snabbare laddning"
       },
       {
         "term": "Webpack",
@@ -137,7 +137,7 @@
         "term": "Minification",
         "en": "The process of removing all unnecessary characters from source code, such as whitespace, comments, and newlines, without changing its functionality.",
         "se": "Tar bort onödiga tecken i koden utan att ändra funktionaliteten.",
-        "seSimple": "Gör koden mindre utan att ändra funktion."
+        "seSimple": "Gör koden mindre utan att ändra funktion = minskar filstorleken"
       }
     ]
   },
@@ -223,15 +223,15 @@
       },
       {
         "term": "Multi-Tier Architecture",
-        "en": "A software architecture pattern that separates an application into multiple, distinct layers or tiers, each responsible for specific aspects of the application's functionality. This separation of concerns helps to organize code, improve scalability, and manage complexity by allowing each tier to evolve independently. The most common form is a three-tier architecture, but applications can have more or fewer tiers depending on the design requirements.",
-        "se": "Ett mönster där en applikation delas upp i flera lager eller nivåer som ansvarar för olika delar av funktionaliteten. Detta gör koden mer organiserad, skalbar och lättare att underhålla. Den vanligaste formen är tre lager, men det kan vara fler eller färre beroende på behov.",
-        "seSimple": "Att dela upp program i flera lager, t.ex. data, logik och gränssnitt."
+        "en": "A software architecture pattern that separates an application into multiple, distinct layers or tiers, each responsible for specific aspects of the application's functionality. This separation of concerns helps to organize code, improve scalability, and manage complexity by allowing each tier to evolve independently. The most common form is a three-tier architecture, but applications can have more or fewer tiers depending on the design requirements. The three-tier architecture typically includes the presentation tier (user interface), the application tier (business logic), and the data tier (database management).",
+        "se": "Ett mönster där en applikation delas upp i flera lager eller nivåer som ansvarar för olika delar av funktionaliteten. Detta gör koden mer organiserad, skalbar och lättare att underhålla. Den vanligaste formen är tre lager, men det kan vara fler eller färre beroende på behov. De tre lagren är vanligtvis presentationslagret (gränssnitt), applikationslagret (logik) och datalagret (databashantering).",
+        "seSimple": "Att dela upp program i flera lager, t.ex. *data, logik och gränssnitt*."
       },
       {
         "term": "Microservice",
         "en": "An architectural style that structures an application as a collection of loosely coupled, independently deployable services. Each microservice is responsible for a specific piece of functionality, such as user authentication, payment processing, or product management, and communicates with other services over a network, typically using HTTP/REST, gRPC, or messaging queues. This approach contrasts with monolithic architectures, where all functionality is tightly integrated into a single application.",
         "se": "En arkitektur där en applikation delas upp i små, fristående tjänster som var och en ansvarar för en specifik funktion, t.ex. inloggning eller betalningar. Dessa tjänster kommunicerar via nätverk. Detta skiljer sig från monolitiska system där allt är samlat i en applikation.",
-        "seSimple": "Små delar av ett system som körs separat men samarbetar."
+        "seSimple": "En applikation delas upp i små, fristående tjänster"
       },
       {
         "term": "Backend System",
@@ -266,7 +266,7 @@
       {
         "term": "Twelve Factor App",
         "en": "A methodology for building modern, scalable, and maintainable software-as-a-service (SaaS) applications. It was introduced by developers at Heroku to provide best practices for building web applications that can be easily deployed and scaled in cloud environments. The methodology outlines twelve principles that address various aspects of software development, from codebase management to deployment and operational concerns.",
-        "se": "En metod för att bygga moderna och skalbara molnapplikationer. Skapades av Heroku och innehåller tolv principer för bästa praxis inom kodhantering, deployment och drift.",
+        "se": "En metod för att bygga moderna och skalbara molnapplikationer. Skapades av Heroku och innehåller tolv principer för bästa praxis inom kodhantering, deployment och drift. De tolv principerna är: 1. En kodbas, 2. Deklarera och isolera beroenden tydligt, 3. Lagra konfiguration i miljövariabler, 4. Behandla externa tjänster (databas, köer, API:er) som utbytbara resurser, 5. Separera bygg-, release- och körfaser, 6. Kör appen som en eller flera stateless-processer, 7. Portbindning, 8. Parallellisering, 9. Disposability, 10. Lika miljöer för dev/prod, 11. Loggning som strömmande filer och 12. Administrativa processer körs separat.",
         "seSimple": "En lista med regler för hur man bygger bra molnapplikationer."
       }
     ]
@@ -490,7 +490,7 @@
       {
         "term": "Hot Module Replacement (HMR)",
         "en": "A feature in modern web development tools that allows modules of an application to be updated in the browser without requiring a full page reload. This feature is particularly useful during development, as it enables faster iteration by instantly applying changes to the application's code while preserving the current state.",
-        "se": "En funktion i moderna utvecklingsverktyg som gör det möjligt att uppdatera moduler i en applikation i webbläsaren utan full omladdning av sidan. Detta är särskilt användbart under utveckling då det möjliggör snabbare iteration genom att direkt tillämpa kodändringar samtidigt som aktuellt tillstånd bevaras.",
+        "se": "En funktion i moderna utvecklingsverktyg som gör det möjligt att uppdatera moduler i en applikation i webbläsaren utan full omladdning av sidan. Detta är särskilt användbart under utveckling då det möjliggör snabbare iteration genom att direkt tillämpa kodändringar samtidigt som aktuellt tillstånd bevaras. Typiskt används HMR i verktyg som Webpack och Vite.",
         "seSimple": "Uppdaterar kod under utveckling utan att sidan laddas om."
       },
       {

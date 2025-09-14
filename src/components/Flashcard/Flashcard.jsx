@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import styles from './Flashcard.module.css';
 import { useNavigate } from "react-router";
+import ReactMarkdown from "react-markdown";
 
 const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, language, setLanguage }) => {
     const [term, setTerm] = useState("");
@@ -11,11 +12,11 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, langua
     let navigate = useNavigate();
 
     useEffect(() => {
-        setTerm(data.term);
+        setTerm(data?.term || "Kortet kunde inte laddas");
     }, [])
 
     useEffect(() => {
-        setExplanation(data[language])
+        setExplanation(data?.[language] || "Beskrivning kunde inte laddas")
     }, [language])
 
     useEffect(() => {
@@ -32,7 +33,7 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, langua
                     <Icon icon="tabler:chevron-left" />
                 </IconButton>
                 <div className={styles.numOfCards}>
-                    <Typography >{index + 1} / {numOfCards}</Typography>
+                    <Typography color="text.disabled" >{index + 1} / {numOfCards}</Typography>
                 </div>
             </Stack>
             <Stack gap={3} className={styles.cardContainer}>
@@ -73,7 +74,9 @@ const Flashcard = ({ data, index = 0, numOfCards = 5, nextCard, prevCard, langua
                 </Card>
                 {showDescription
                     ? <Card className={styles.cardDescription}>
-                        <Typography variant="body1">{explanation}</Typography>
+                        <ReactMarkdown>
+                            {explanation}
+                        </ReactMarkdown>
                     </Card>
                     : <Typography variant="caption" color="text.disabled" sx={{ textAlign: 'center' }}>Klicka på kortet för att visa/stänga beskrivningen</Typography>
                 }

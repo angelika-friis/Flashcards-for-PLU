@@ -10,13 +10,13 @@ const CategoryCard = ({ category = [], handleClick }) => {
             className={styles.categoryCard}
         >
             <div>
-                <Icon icon="lets-icons:check-fill" color='lightgray' className={styles.checkIcon} />
+                <Icon icon="lets-icons:check-fill" color='#134978' className={styles.checkIcon} />
                 <Typography sx={{ fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" } }}>
-                    {category.categoryName}
+                    {category?.categoryName || "Kategori kunde inte laddas 🫣"}
                 </Typography>
             </div>
             <Typography variant='body1' color='text.disabled' className={styles.numOfCards}>
-                ({category.terms.length})
+                ({category?.terms?.length || "Fel"})
             </Typography>
         </Paper>
     )

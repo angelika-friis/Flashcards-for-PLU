@@ -1,4 +1,5 @@
 import Flashcard from "./Flashcard"
+import { MemoryRouter } from "react-router-dom";
 
 export default {
     title: "Components/Flashcard",
@@ -15,5 +16,26 @@ export const Default = {
         },
         numOfCards: 5,
         index: 0
-    }
+    },
+    decorators: [
+        (Story) => (
+            <MemoryRouter>
+                <Story />
+            </MemoryRouter>
+        ),
+    ],
+}
+
+export const withoutData = {
+    args: {
+        numOfCards: 5,
+        index: 0
+    },
+    decorators: [
+        (Story) => (
+            <MemoryRouter>
+                <Story />
+            </MemoryRouter>
+        ),
+    ],
 }

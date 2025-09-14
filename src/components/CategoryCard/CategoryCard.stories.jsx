@@ -28,3 +28,9 @@ export const Default = {
         },
     }
 };
+
+export const withoutData = {
+    args: {
+        onClick: () => console.log("click!"),
+    }
+};
