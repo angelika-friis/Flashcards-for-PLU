@@ -5,7 +5,7 @@
       {
         "term": "Version Control",
         "en": "A system that records changes to files over time so that you can recall specific versions later. It allows multiple developers to collaborate on a project by tracking and managing changes to the codebase. *Version control systems (VCS)* enable developers to work simultaneously on different parts of a project, keep track of every modification, and revert back to previous versions if necessary.",
-        "se": "Ett system som **registrerar ändringar** i filer över tid så att du **kan återkalla specifika versioner senare**.\nDet gör det möjligt för flera utvecklare att samarbeta i ett projekt genom att spåra och hantera ändringar i kodbasen. *Versionshanteringssystem (VCS)* gör det möjligt att arbeta samtidigt på olika delar av ett projekt, hålla reda på varje ändring och återställa tidigare versioner vid behov.",
+        "se": "**Ett system som registrerar ändringar i filer över tid så att du kan återkalla specifika versioner senare**. \n \n Det gör det möjligt för flera utvecklare att samarbeta i ett projekt genom att spåra och hantera ändringar i kodbasen. *Versionshanteringssystem (VCS)* gör det möjligt att arbeta samtidigt på olika delar av ett projekt, hålla reda på varje ändring och återställa tidigare versioner vid behov.",
         "seSimple": "Ett sätt att spara och hålla koll på olika versioner av filer eller kod så att man kan samarbeta och backa om något blir fel."
       },
       {
@@ -70,7 +70,7 @@
       {
         "term": "Bundling",
         "en": "The process of combining multiple files, such as JavaScript, CSS and other assets, into a single or a few output files. This is done to reduce the number of HTTP requests needed to load a webpage, which can improve the loading speed and overall performance of web applications.",
-        "se": "Processen att kombinera flera filer, som JavaScript, CSS och andra resurser, till en eller några få filer för att minska antalet HTTP-förfrågningar och förbättra laddningstiden.",
+        "se": "Processen att kombinera flera filer, som JavaScript, CSS och andra resurser, till en eller några få filer för att minska antalet HTTP-förfrågningar och förbättra laddningstiden. \n \n --- \n \n Boundler vs. Minification \n * Bundling = färre filer. \n * Minification = mindre filer. \n \n Ofta används båda tillsammans: bundlern skapar en enda fil och sen minifieras den för att bli så liten och snabb som möjligt.",
         "seSimple": "Slår ihop flera filer (så som JS och CSS) till färre filer för snabbare laddning"
       },
       {
@@ -136,7 +136,7 @@
       {
         "term": "Minification",
         "en": "The process of removing all unnecessary characters from source code, such as whitespace, comments, and newlines, without changing its functionality.",
-        "se": "Tar bort onödiga tecken i koden utan att ändra funktionaliteten.",
+        "se": "Vad det är: Tar bort onödiga tecken i koden utan att ändra funktionalitet. \n * Byter långa variabelnamn till korta (functionName → a). \n * Syfte: Minska filstorlek → snabbare nedladdning. \n \n --- \n \n Boundler vs. Minification \n * Bundling = färre filer. \n * Minification = mindre filer. \n \n Ofta används båda tillsammans: bundlern skapar en enda fil och sen minifieras den för att bli så liten och snabb som möjligt.",
         "seSimple": "Gör koden mindre utan att ändra funktion = minskar filstorleken"
       }
     ]
@@ -266,7 +266,7 @@
       {
         "term": "Twelve Factor App",
         "en": "A methodology for building modern, scalable, and maintainable software-as-a-service (SaaS) applications. It was introduced by developers at Heroku to provide best practices for building web applications that can be easily deployed and scaled in cloud environments. The methodology outlines twelve principles that address various aspects of software development, from codebase management to deployment and operational concerns.",
-        "se": "En metod för att bygga moderna och skalbara molnapplikationer. Skapades av Heroku och innehåller tolv principer för bästa praxis inom kodhantering, deployment och drift. De tolv principerna är: 1. En kodbas, 2. Deklarera och isolera beroenden tydligt, 3. Lagra konfiguration i miljövariabler, 4. Behandla externa tjänster (databas, köer, API:er) som utbytbara resurser, 5. Separera bygg-, release- och körfaser, 6. Kör appen som en eller flera stateless-processer, 7. Portbindning, 8. Parallellisering, 9. Disposability, 10. Lika miljöer för dev/prod, 11. Loggning som strömmande filer och 12. Administrativa processer körs separat.",
+        "se": "En **twelve-factor app** är en metodik för att bygga mjukvara som en tjänst (SaaS-appar) på ett hållbart, portabelt och skalbart sätt. Den togs fram av utvecklare på **Heroku** för att ge riktlinjer kring hur moderna webbapplikationer bör designas och driftsättas i molnmiljöer. \n \n Syftet är att göra appar: \n \n * **Bärbara** mellan olika miljöer (lokalt, test, produktion, olika molnleverantörer) \n * **Enkla att skala** horisontellt (lägga till fler instanser) \n * **Robusta** och lätta att underhålla över tid \n \n De **tolv faktorerna** är: \n \n 1. **Codebase** – En kodbas, versionshanterad (t.ex. Git), många deployer. \n 2. **Dependencies** – Deklarera och isolera beroenden tydligt. \n 3. **Config** – Lagra konfiguration i miljövariabler, inte i koden. \n 4. **Backing services** – Behandla tjänster som databaser och köer som utbytbara resurser. \n 5. **Build, release, run** – Separera bygg-, release- och körfaser. \n 6. **Processes** – Kör appen som en eller flera stateless-processer. \n 7. **Port binding** – Exportera tjänster via portbindning, inte via extern webserver. \n 8. **Concurrency** – Skala genom processer, inte trådar. \n 9. **Disposability** – Gör processer snabba att starta och avsluta för bättre robusthet. \n 10. **Dev/prod parity** – Håll utveckling, test och produktion så lika som möjligt. \n 11. **Logs** – Behandla loggar som strömmande händelser, inte som filer. \n 12. **Admin processes** – Kör administrativa/engångsskript separat från huvudprocesserna.",
         "seSimple": "En lista med regler för hur man bygger bra molnapplikationer."
       }
     ]
@@ -319,13 +319,13 @@
       {
         "term": "Node",
         "en": "Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code on the server side. Built on Chrome's V8 JavaScript engine, Node.js is designed for building scalable, high-performance applications, particularly those that require real-time data interaction, such as web servers, APIs, and streaming services. Node.js uses an event-driven, non-blocking I/O model, making it efficient and suitable for applications that handle a large number of simultaneous connections.",
-        "se": "Node.js är en öppen källkod och plattformsoberoende JavaScript-runtime för att köra JavaScript på serversidan. Byggd på Chromes V8-motor och designad för skalbara och högpresterande applikationer.",
+        "se": "Node.js är en öppen källkod och plattformsoberoende JavaScript-runtime för att köra JavaScript på serversidan. Byggd på Chromes V8-motor och designad för skalbara och högpresterande applikationer. \n \n --- \n \n # Node.js vs Express.js – Fusklapp \n \n **Node.js** \n  - JavaScript-runtime på serversidan. \n  - Bygger på V8-motorn (Chrome). \n  - Ger API:er för filsystem, nätverk, processhantering. \n  - Kan köra servrar direkt med inbyggda moduler (`http`). \n \n **Express.js** \n  - Webbramverk byggt ovanpå Node.js. \n  - Förenklar skapandet av webbservrar och API:er. \n  - Har routing (`GET /users`), middleware (autentisering, loggning). \n  - Abstraherar `req` och `res` så att du slipper low-level kod. \n \n 👉 **Sammanfattning:** \n \n Node.js = grunden (motor + verktyg). \n Express.js = ramverk som gör serverutveckling snabbare och enklare.",
         "seSimple": "Ett sätt att köra JavaScript på servern, inte bara i webbläsaren."
       },
       {
         "term": "Express",
         "en": "Express.js is a minimal and flexible web application framework for Node.js. It provides a robust set of features for building web and mobile applications, including tools for routing, middleware management, and handling HTTP requests and responses. Express.js simplifies the process of creating server-side applications, allowing developers to focus on writing the business logic rather than dealing with the underlying infrastructure.",
-        "se": "Express.js är ett ramverk för Node.js som gör det enklare att bygga webbapplikationer och API:er. Det erbjuder routing, middleware och hantering av HTTP-förfrågningar.",
+        "se": "Express.js är ett ramverk för Node.js som gör det enklare att bygga webbapplikationer och API:er. Det erbjuder routing, middleware och hantering av HTTP-förfrågningar. \n \n --- \n \n # Node.js vs Express.js – Fusklapp \n \n **Node.js** \n  - JavaScript-runtime på serversidan. \n  - Bygger på V8-motorn (Chrome). \n  - Ger API:er för filsystem, nätverk, processhantering. \n  - Kan köra servrar direkt med inbyggda moduler (`http`). \n \n **Express.js** \n  - Webbramverk byggt ovanpå Node.js. \n  - Förenklar skapandet av webbservrar och API:er. \n  - Har routing (`GET /users`), middleware (autentisering, loggning). \n  - Abstraherar `req` och `res` så att du slipper low-level kod. \n \n 👉 **Sammanfattning:** \n \n Node.js = grunden (motor + verktyg). \n \n Express.js = ramverk som gör serverutveckling snabbare och enklare.",
         "seSimple": "Ett verktyg som gör det enklare att bygga servrar med Node.js."
       },
       {
@@ -396,31 +396,31 @@
       {
         "term": "Double Dummy",
         "en": "In software testing, a Dummy is a type of testing double used as a placeholder object that is passed around but never actually used in the test. Dummies are typically utilized when a method or function requires an argument, but the specific value of that argument is irrelevant to the test being conducted. The primary purpose of a dummy is to fulfill the requirements of the function signature without influencing the outcome of the test.",
-        "se": "En Dummy är en test-dubbel som fungerar som en platshållare i tester. Den används när en metod kräver ett argument, men värdet är irrelevant för testet.",
+        "se": "En Dummy är en test-dubbel som fungerar som en platshållare i tester. Den används när en metod kräver ett argument, men värdet är irrelevant för testet. \n \n *Exempel:* Skicka in `null` eller en tom sträng för att en metod kräver ett argument.",
         "seSimple": "En fejk som bara fyller en plats men inte gör något."
       },
       {
         "term": "Double Stub",
         "en": "A type of testing double used in software testing that replaces a real object or method with a simplified version that provides predefined responses. Unlike mocks or spies, stubs do not record interactions or track how they are used; they simply return hard-coded values or responses when called. Stubs are particularly useful when you need to isolate the component under test by removing dependencies on external systems or complex objects, ensuring that the test focuses solely on the logic being tested.",
-        "se": "En Stub är en test-dubbel som ersätter ett objekt eller metod med en förenklad version som returnerar fördefinierade svar. Den loggar inte anrop, utan används för att isolera testet från externa beroenden.",
+        "se": "En Stub är en test-dubbel som ersätter ett objekt eller metod med en förenklad version som returnerar fördefinierade svar. Den loggar inte anrop, utan används för att isolera testet från externa beroenden. \n \n *Exempel:* En metod som alltid returnerar `ok` oavsett input.",
         "seSimple": "En fejk som alltid ger samma svar."
       },
       {
         "term": "Double Fake",
         "en": "A type of testing double used in software testing that provides a working, but simplified, implementation of a component or service. Unlike dummies or stubs, which do not carry out any real logic, a fake mimics the behavior of a real object but with less complexity, making it suitable for testing purposes. Fakes are often used when the real object is too resource-intensive or complex to use in a test environment, such as a database or an external API.",
-        "se": "En Fake är en test-dubbel som har en fungerande men förenklad version av en komponent eller tjänst. Den används istället för den riktiga när denna är för tung eller komplex för testmiljön.",
+        "se": "En Fake är en test-dubbel som har en fungerande men förenklad version av en komponent eller tjänst. Den används istället för den riktiga när denna är för tung eller komplex för testmiljön. \n \n *Exempel:* En in-memory-databas istället för en riktig databas.",
         "seSimple": "En förenklad version som fungerar på riktigt men enklare."
       },
       {
         "term": "Double Spy",
         "en": "A Spy is a type of testing double used in software testing that wraps around a real object or function and records information about how it is used during the test, such as method calls and the arguments passed. Unlike mocks or stubs, a spy does not replace the original functionality; instead, it monitors and tracks interactions without altering the behavior of the underlying code. Spies are particularly useful for verifying that certain methods were called, how many times they were called, and with what parameters, while still allowing the original logic to be executed.",
-        "se": "En Spy är en test-dubbel som används för att övervaka hur en metod eller funktion anropas under ett test. Den ersätter inte logiken utan loggar bara interaktioner som vilka metoder som körts och med vilka argument.",
+        "se": "En Spy är en test-dubbel som används för att övervaka hur en metod eller funktion anropas under ett test. Den ersätter inte logiken utan loggar bara interaktioner som vilka metoder som körts och med vilka argument. \n \n *Exempel:* Kontrollera efteråt om `save()` kallades med rätt parameter.",
         "seSimple": "En fejk som kollar hur en funktion används."
       },
       {
         "term": "Double Mock",
         "en": "A type of testing double used in software testing that not only simulates the behavior of real objects but also records the interactions with it, such as method calls and arguments passed. Mocks are particularly useful when you need to verify that certain methods were called during the execution of a test and to check the specific interactions between components. Mocks can be pre-programmed with expectations that define what methods should be called and with what parameters, making them more sophisticated than other testing doubles like stubs or dummies.",
-        "se": "En Mock är en test-dubbel som både simulerar beteendet av ett riktigt objekt och loggar interaktionerna. Den kan förväntas anropas på ett visst sätt och testet misslyckas om detta inte sker.",
+        "se": "En Mock är en test-dubbel som både simulerar beteendet av ett riktigt objekt och loggar interaktionerna. Den kan förväntas anropas på ett visst sätt och testet misslyckas om detta inte sker. \n \n *Exempel:* Kontrollera att `sendEmail()` anropas exakt en gång.",
         "seSimple": "En fejk som både beter sig som det riktiga och kollar hur det används."
       },
       {
