@@ -19,8 +19,11 @@ const CategoriesPage = () => {
 
     return (
         <div>
-            <Typography variant='h3' my={4} color='primary' fontWeight={700} >
-                Flashcards för PKU
+            <Typography variant='h3' mt={4} color='primary' fontWeight={700} >
+                Flashcards
+            </Typography>
+            <Typography variant='h4' mb={4} color='secondary' fontWeight={500} >
+                för PLU
             </Typography>
             {flashcards.map((category) =>
                 <CategoryCard key={category.categoryName} category={category} handleClick={handleClick} />
