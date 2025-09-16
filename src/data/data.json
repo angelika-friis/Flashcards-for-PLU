@@ -246,9 +246,9 @@
         "seSimple": "Den del av hemsidan som användaren ser och använder."
       },
       {
-        "term": "WebMVC (Model-View-Controller)",
-        "en": "A design pattern used in web development to separate concerns within an application. It divides an application into three interconnected components: the Model (which represents the data or business logic), the View (which represents the UI or presentation layer), and the Controller (which handles user input and updates the Model and View accordingly). This pattern is commonly used in web frameworks to organize code in a way that promotes modularity, scalability, and maintainability.",
-        "se": "Ett mönster som delar upp en applikation i tre delar: Model (data och logik), View (gränssnitt) och Controller (hanterar inmatning och uppdaterar Model och View). Används ofta i webbapplikationer för att organisera koden.",
+        "term": "WebMVC",
+        "en": "**WebMVC (Model-View-Controller)** \n \n A design pattern used in web development to separate concerns within an application. It divides an application into three interconnected components: the Model (which represents the data or business logic), the View (which represents the UI or presentation layer), and the Controller (which handles user input and updates the Model and View accordingly). This pattern is commonly used in web frameworks to organize code in a way that promotes modularity, scalability, and maintainability.",
+        "se": "**WebMVC (Model-View-Controller)** \n \n Ett mönster som delar upp en applikation i tre delar: Model (data och logik), View (gränssnitt) och Controller (hanterar inmatning och uppdaterar Model och View). Används ofta i webbapplikationer för att organisera koden.",
         "seSimple": "Ett sätt att dela upp kod i data, gränssnitt och styrning."
       },
       {
@@ -258,9 +258,9 @@
         "seSimple": "En modul som sköter en del av ett system, t.ex. en knapp eller en tjänst."
       },
       {
-        "term": "DRY (Don't Repeat Yourself)",
-        "en": "A principle of software development aimed at reducing repetition of code, logic, or data within a system. The DRY principle encourages developers to avoid duplicating code by abstracting repeated logic or data into reusable components, functions, or modules. This approach promotes cleaner, more maintainable code, and reduces the risk of errors by ensuring that any change only needs to be made in one place.",
-        "se": "En princip som handlar om att undvika upprepning av kod och logik. Istället bör man återanvända komponenter och funktioner för att få renare och lättare underhållen kod.",
+        "term": "DRY",
+        "en": "**DRY (Don't Repeat Yourself)** \n \n A principle of software development aimed at reducing repetition of code, logic, or data within a system. The DRY principle encourages developers to avoid duplicating code by abstracting repeated logic or data into reusable components, functions, or modules. This approach promotes cleaner, more maintainable code, and reduces the risk of errors by ensuring that any change only needs to be made in one place.",
+        "se": "**DRY (Don't Repeat Yourself)** \n \n En princip som handlar om att undvika upprepning av kod och logik. Istället bör man återanvända komponenter och funktioner för att få renare och lättare underhållen kod.",
         "seSimple": "En regel som säger att man inte ska skriva samma kod flera gånger."
       },
       {
@@ -305,9 +305,9 @@
         "seSimple": "Ett sätt att hämta in kod från andra filer i Node.js."
       },
       {
-        "term": "Import (ES6 Modules)",
-        "en": "A statement in JavaScript used to bring in modules and their exports from other files into the current file. It is part of the ES6 module system, which is designed to allow for modular programming and code reuse. Unlike require, import is statically analyzed, meaning it is hoisted and processed before the rest of the code runs. import supports both named imports and default imports, and while it is usually static, dynamic imports are also possible using import().",
-        "se": "En sats i JavaScript för att importera moduler och deras exporter från andra filer. Är en del av ES6-modulsystemet som gör kod mer modulär. import analyseras innan koden körs, till skillnad från require.",
+        "term": "Import",
+        "en": "A statement in ES6 used to bring in modules and their exports from other files into the current file. It is part of the ES6 module system, which is designed to allow for modular programming and code reuse. Unlike require, import is statically analyzed, meaning it is hoisted and processed before the rest of the code runs. import supports both named imports and default imports, and while it is usually static, dynamic imports are also possible using import().",
+        "se": "En sats i ES6 för att importera moduler och deras exporter från andra filer. Är en del av ES6-modulsystemet som gör kod mer modulär. import analyseras innan koden körs, till skillnad från require.",
         "seSimple": "Ett modernt sätt att hämta in kod från andra filer i JavaScript."
       },
       {
@@ -341,9 +341,9 @@
         "seSimple": "Kod som körs på servern och skickar resultatet till webbläsaren."
       },
       {
-        "term": "API (Application Programming Interface)",
-        "en": "A set of rules that allows different software applications to communicate with each other.",
-        "se": "Ett regelverk som gör det möjligt för olika mjukvaror att kommunicera med varandra.",
+        "term": "API",
+        "en": "**API (Application Programming Interface)** \n \n A set of rules that allows different software applications to communicate with each other.",
+        "se": "**API (Application Programming Interface)** \n \n Ett regelverk som gör det möjligt för olika mjukvaror att kommunicera med varandra.",
         "seSimple": "Ett sätt för olika program att prata med varandra."
       },
       {
@@ -444,16 +444,16 @@
     ]
   },
   {
-    "categoryName": "CI/CD & monitoring",
+    "categoryName": "CI-CD & monitoring",
     "terms": [
       {
-        "term": "Continuous Integration (CI)",
+        "term": "CI",
         "en": "The practice of frequently integrating code changes into a shared repository, where automated builds and tests are run to catch errors early.",
         "se": "Att ofta slå ihop kodändringar till en gemensam kodbas och köra automatiska tester för att hitta fel tidigt.",
         "seSimple": "Automatiska tester körs varje gång ny kod läggs till."
       },
       {
-        "term": "Continuous Deployment (CD)",
+        "term": "CD",
         "en": "An extension of Continuous Integration where code changes are automatically deployed to production after passing automated tests, ensuring that software is always in a releasable state.",
         "se": "Kod som automatiskt släpps till produktionen efter att den klarat tester. Säkerställer att mjukvaran alltid kan användas.",
         "seSimple": "Ny kod som fungerar bra går direkt ut till användarna."
@@ -482,21 +482,21 @@
         "seSimple": "Ett enkelt textformat som konverteras till HTML. Vanligt för README-filer och dokumentation."
       },
       {
-        "term": "YAML (YAML Ain't Markup Language)",
+        "term": "YAML",
         "en": "A human-readable data serialization format commonly used for configuration files and data exchange between languages with different data structures. The .yml or .yaml file extension is used for files written in YAML. It is known for its simplicity and ease of use, allowing developers to define data in a clear and structured manner without the complexity of other formats like XML or JSON.",
         "se": "Ett människoläsbart serialiseringsformat för data, ofta använt för konfigurationsfiler och datautbyte mellan språk med olika datastrukturer. Filändelsen .yml eller .yaml används för YAML-filer. YAML är känt för sin enkelhet och användbarhet, vilket gör det möjligt att definiera data på ett tydligt och strukturerat sätt utan komplexiteten i exempelvis XML eller JSON.",
         "seSimple": "Ett lättläst format för konfigurationsfiler. Vanligt i CI/CD och Docker."
       },
       {
-        "term": "Hot Module Replacement (HMR)",
-        "en": "A feature in modern web development tools that allows modules of an application to be updated in the browser without requiring a full page reload. This feature is particularly useful during development, as it enables faster iteration by instantly applying changes to the application's code while preserving the current state.",
-        "se": "En funktion i moderna utvecklingsverktyg som gör det möjligt att uppdatera moduler i en applikation i webbläsaren utan full omladdning av sidan. Detta är särskilt användbart under utveckling då det möjliggör snabbare iteration genom att direkt tillämpa kodändringar samtidigt som aktuellt tillstånd bevaras. Typiskt används HMR i verktyg som Webpack och Vite.",
+        "term": "HMR",
+        "en": "**Hot Module Replacement (HMR)** \n \n A feature in modern web development tools that allows modules of an application to be updated in the browser without requiring a full page reload. This feature is particularly useful during development, as it enables faster iteration by instantly applying changes to the application's code while preserving the current state.",
+        "se": "**Hot Module Replacement (HMR)** \n \n En funktion i moderna utvecklingsverktyg som gör det möjligt att uppdatera moduler i en applikation i webbläsaren utan full omladdning av sidan. Detta är särskilt användbart under utveckling då det möjliggör snabbare iteration genom att direkt tillämpa kodändringar samtidigt som aktuellt tillstånd bevaras. Typiskt används HMR i verktyg som Webpack och Vite.",
         "seSimple": "Uppdaterar kod under utveckling utan att sidan laddas om."
       },
       {
-        "term": "TTFHW (Time to First Hello World)",
-        "en": "Refers to the amount of time it takes for a developer to set up a project or environment and reach the point where they can run a basic 'Hello World!' program. This metric is often used to measure how quickly and easily a new developer can get started with a tool, framework, or project. A lower TTFHW indicates a more user-friendly setup process and a smoother onboarding experience.",
-        "se": "Avser den tid det tar för en utvecklare att sätta upp ett projekt eller en miljö och nå punkten där hen kan köra ett grundläggande 'Hello World!'-program. Detta mått används ofta för att bedöma hur snabbt och enkelt en ny utvecklare kan komma igång med ett verktyg, ramverk eller projekt. Ett lägre TTFHW indikerar en mer användarvänlig setup och en smidigare onboarding-upplevelse.",
+        "term": "TTFHW",
+        "en": "**TTFHW (Time to First Hello World)** \n \n Refers to the amount of time it takes for a developer to set up a project or environment and reach the point where they can run a basic 'Hello World!' program. This metric is often used to measure how quickly and easily a new developer can get started with a tool, framework, or project. A lower TTFHW indicates a more user-friendly setup process and a smoother onboarding experience.",
+        "se": "**TTFHW (Time to First Hello World)** \n \n Avser den tid det tar för en utvecklare att sätta upp ett projekt eller en miljö och nå punkten där hen kan köra ett grundläggande 'Hello World!'-program. Detta mått används ofta för att bedöma hur snabbt och enkelt en ny utvecklare kan komma igång med ett verktyg, ramverk eller projekt. Ett lägre TTFHW indikerar en mer användarvänlig setup och en smidigare onboarding-upplevelse.",
         "seSimple": "Mått på hur snabbt en utvecklare kan sätta upp och köra ett första exempel. Lågt värde = lätt att komma igång."
       }
     ]
